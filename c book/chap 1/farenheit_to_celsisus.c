@@ -26,5 +26,15 @@ int main() {
 
     }
 
+    /* this time with floats */
 
+    // float fahr2, cel2;
+    // int upper2, lower2, step2;
+
+
+
+    // return 0;
 }
+
+
+
