@@ -36,6 +36,11 @@ int main() {
     step2 = 20;
 
     fahr = lower;
+
+    /* exercise 1-3, print a heading above the table
+    seems easy enough, \t for a spacing and just write something*/
+
+    printf("Farenheit\tCelsisus\n");
     while (fahr<=upper) {
 
 
@@ -52,8 +57,33 @@ int main() {
     }
 
 
+    /* exercise 1-4, write the inverse, celsisus to farenheit now 
+    reassigning vars bc busy*/
 
-    // return 0;
+    float cel, fahr;
+    int upper, lower, step;
+
+    // using step size of ten and upper of 150 c, just cause it makes more sense realsitically
+    // but im also a nihilistic programmer so who knows if anything maekes sense at all o_o
+    lower = 0;
+    upper = 150;
+    step = 10;
+
+    cel = lower;
+
+    while (cel <= upper) {
+
+        fahr = cel *1.8 + 32;
+
+        printf("%3.0f\t%6.1f\n", cel, fahr);
+
+        cel = cel + step;
+
+
+    }
+    // very nice ^_^    
+
+    return 0;
 }
 
 
