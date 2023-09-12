@@ -27,12 +27,12 @@ int main() {
     // fizz buzz, to 100
     // cs1050 is a miserable class i hope it actually starts to weed people out
     // cs majors 🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢
-    
-
-    for (int i = 0; i<=100; i++) {
 
 
-        if (i % 3 == 0 && i % 5) {
+    for (int i = 1; i<=100; i++) {
+
+
+        if (i % 3 == 0 && i % 5 == 0) {
 
             printf("fizzbuzz\n");
         }
@@ -51,5 +51,11 @@ int main() {
         }
 
     }
+
+
+
+
+
     return 0; 
 }
+
