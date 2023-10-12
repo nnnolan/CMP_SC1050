@@ -20,12 +20,14 @@ int main () {
     // also need to make sure that the leg count is an even number, no half animals
     // double pipe is OR, double ampersand is AND
     while(leg_count < (nums_animals*2) || leg_count > (nums_animals*4) || leg_count % 2 != 0) {
+        // while leg count is less than double the number of animals, or greater than 4x the number of animals, or not an even number
         printf("How many legs are there?\n");
         scanf("%d", &leg_count);
     }
 
     cows = (leg_count - (nums_animals*2)) / 2;
-    chickens = nums_animals - cows;
+    chickens = nums_animals - cows; // could also do (leg_count - (cows*4)) / 2
+    
 
     printf("There are %d cows and %d chickens\n", cows, chickens);
 
