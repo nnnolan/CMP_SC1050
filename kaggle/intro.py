@@ -1,5 +1,22 @@
 import pandas as pd
+import numpy as np
+import dearpygui.dearpygui as dpg
 
-df_melb = pd.read_csv('intro_to_ml/melb_data.csv')
-print(df_melb.head())
-print(df_melb.describe())
+import dearpygui.dearpygui as dpg
+
+def save_callback():
+    print("Save Clicked")
+
+dpg.create_context()
+dpg.create_viewport()
+dpg.setup_dearpygui()
+
+with dpg.window(label="Example Window"):
+    dpg.add_text("Hello world")
+    dpg.add_button(label="Save", callback=save_callback)
+    dpg.add_input_text(label="string")
+    dpg.add_slider_float(label="float")
+
+dpg.show_viewport()
+dpg.start_dearpygui()
+dpg.destroy_context()
