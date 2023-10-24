@@ -26,4 +26,6 @@ for i in better_list:
 print(counter)
 print(len(better_list))
 # create a dataframe
-# df = pd.DataFrame(data, columns = ['artist', 'album'])
+# df = pd.DataFrame(data, columns = ['artist', 'album']
+# )
+
