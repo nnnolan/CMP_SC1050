@@ -26,6 +26,26 @@ int main() {
     printName(name);
 
 
+
+    
+    int x, y, z =0;
+
+                                // in the abense of parentheses, the order of operations is:
+                                // 1. increment y
+                                // 2. evaluate x==5
+                                // 3. evaluate y++
+                                // 4. evaluate ++z
+                                // 5. evaluate the || statement
+                                // 6. evaluate the && statement
+                                // 7. evaluate the if statement
+                                // and takes precedence over or (&& takes precedence over ||)
+                                
+    if ( x==5 && y++ || ++z ) { // tricky, z is incremented even though the if statement is false, and since z is 1, it evaluates to true
+        printf("if statement true!\n");
+    }
+    printf("x: %d, y: %d, z: %d\n", x, y, z);
+
+
     return 0;
 }
 
